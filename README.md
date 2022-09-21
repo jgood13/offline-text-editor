@@ -19,7 +19,4 @@ This is a browser app that you can install and use offline. It uses several form
 
 ## Link(s) to Deployed Application
 
-<a href = "https://github.com/jgood13/offline-text-editor"
-target="_blank">Github Repo</a>
-
 <a href = "https://young-earth-01859.herokuapp.com/" target="_blank">Heroku Deployment</a>
