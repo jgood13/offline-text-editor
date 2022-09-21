@@ -31,7 +31,10 @@ export const getDb = async () => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log("data saved", result);
+  result
+    ? console.log("data saved", result.value)
+    : console.log("data not found");
+  return result?.value;
 };
 
 // Export a function we will use to update to the database.
@@ -49,12 +52,13 @@ export const putDb = async (content) => {
 
   // Use the put method on the store and pass in the content.
   const request = store.put({
-    content: content,
+    id: 1,
+    value: content,
   });
 
   // Get confirmation of the request.
   const result = await request;
-  console.log("🚀 - data saved to the database", result);
+  console.log("data saved to the database", result);
 };
 
 // Start the database.
