@@ -38,7 +38,7 @@ export const getDb = async () => {
 };
 
 // Export a function we will use to update to the database.
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
   console.log("PUT to the database");
 
   // Create a connection to the database database and version we want to use.
@@ -52,7 +52,7 @@ export const putDb = async (content) => {
 
   // Use the put method on the store and pass in the content.
   const request = store.put({
-    id: 1,
+    id: id,
     value: content,
   });
 
